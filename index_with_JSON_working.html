@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <title>Hello React</title>
+
+	<link rel = "stylesheet" href = "style.css" type = "text/css" />
+
+	<script>
+
+		function ajax_get_json()
+		{
+
+			var url = "https://api.spotify.com/v1/artists/0gOfliKtwRYsD3ST4iBvv3";
+
+			var results = document.getElementById("json");
+
+			var hr = new XMLHttpRequest();
+
+			hr.open("GET", url, true);
+
+			hr.setRequestHeader("Content-type", "application/json", true);
+
+			hr.onreadystatechange = function()
+			{
+				if(hr.readyState == 4 && hr.status == 200)
+				{
+					var data = JSON.parse(hr.responseText);
+
+					results.innerHTML = "Name: " + data.name + " with popularity " + data.popularity + " and followers " + data.followers.total;
+
+          for(var i = 0; i < data.images.length; i++)
+          {
+            console.log("In for. I: " + i);
+            results.innerHTML += " Img: " + data.images[i].url;
+          }
+				}
+			}
+
+			hr.send(null);
+
+			results.innerHTML = "requesting...";
+		}
+
+	</script>
+  </head>
+
+  <body>
+
+	<div>
+		<h1>Welcome</h1>
+	</div>
+
+	<div id = "app">
+	</div>
+
+	<hr />
+	<div id = "json">
+		<h2>Results</h2>
+	</div>
+
+		<script>ajax_get_json();</script>
+    <script src="app.bundle.js"></script>
+
+  </body>
+</html>
