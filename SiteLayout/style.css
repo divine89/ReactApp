@@ -1,11 +1,9 @@
 body
 {
 	background-color: #262626;
-	font: 20px 'Roboto Condensed', sans-serif;
-	line-height: 1.8;
 }
 
-.navbar 
+.navbar
 {
   margin-bottom: 0;
   background-color: #60d8f9;
@@ -13,62 +11,86 @@ body
   font-size: 16px !important;
   letter-spacing: 4px;
   opacity: 0.9;
+	padding: 0px 0;
 }
 
 .nav > li > a
 {
-	color: #ffffff;
+	color: #000000;
 }
 
-.bg-1
+.nav > li > a:hover
 {
-	background-color: #262626;
- 	color: #f2f2f2;
-  font-size: 40px;
-  font-weight: 300;
-	margin: auto;
-}
-
-.bg-2
-{
+	color: #f2f2f2;
 	background-color: #cc7a6f;
- 	color: #212121;
-  font-size: 40px;
-  font-weight: 300;
 }
 
-.bg-3
+.navbar-brand
+{
+	color: #000000;
+}
+
+.block
+{
+	margin-top: 0px;
+	padding: 100px 100px;
+	line-height: 1.9;
+	font-size: 30px;
+}
+
+.bg-description
 {
 	background-color: #262626;
  	color: #f2f2f2;
-  font-size: 40px;
-  font-weight: 300;
 }
 
-h3
+.bg-application
 {
-  margin: 10px 0 30px 0;
-  letter-spacing: 10px;      
-  font-size: 10px;
-  color: #111;
+	background-color: #f2f2f2;
+ 	color: #262626;
 }
+
+.bg-tools
+{
+	background-color: #262626;
+ 	color: #f2f2f2;
+}
+
+footer
+{
+	font-size: 16px;
+	background-color: #f2f2f2;
+	color: #262626;
+	padding: 20px 0;
+}
+
+h1
+{
+	color: #60d8f9;
+	font-family: 'Roboto', sans-serif;
+  margin: 10px 0 30px 0;
+  letter-spacing: 10px;
+  font-size: 70px;
+}
+
+h2
+{
+	color: #cc7a6f;
+	font-family: 'Roboto', sans-serif;
+  margin: 10px 0 30px 0;
+  letter-spacing: 10px;
+  font-size: 70px;
+}
+
 
 p
 {
-	font-size: 16px;
+	font-weight: 300;
+	font-family: 'Roboto Condensed', sans-serif;
+	
 }
 
-.margin 
+.margin
 {
 	margin-bottom: 45px;
 }
-
- .container-fluid 
-{	
-	margin-top: 70px;
-	padding: 70px 70px;
-}
-
-
-
-
