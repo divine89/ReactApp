@@ -50,7 +50,7 @@ body
  	color: #262626;
 }
 
-.bg-tools
+.bg-technology
 {
 	background-color: #262626;
  	color: #f2f2f2;
@@ -82,15 +82,33 @@ h2
   font-size: 70px;
 }
 
+h3
+{
+	font-size: 40px;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #cc7a6f;
+}
+
+h4
+{
+	font-size: 30px;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #f2f2f2;
+}
+
 
 p
 {
 	font-weight: 300;
 	font-family: 'Roboto Condensed', sans-serif;
-	
 }
 
 .margin
 {
 	margin-bottom: 45px;
+}
+
+.jumbotron
+{
+	background-color: #cc7a6f;
 }
