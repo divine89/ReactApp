@@ -1,84 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Ract Application</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Ract Application</title>
 
-		<!-- Customize style -->
-		<link rel = "stylesheet" href = "style.css" type = "text/css">
-		<link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- Customize style -->
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed'
+      rel='stylesheet' type='text/css'>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-  </head>
+</head>
 
-  <body>
-		<header>
-			<nav class = "navbar navbar-fixed-top ">
-				<div class = "container">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <header>
+    <nav class="navbar navbar-fixed-top ">
+      <div class="container">
 
-					<div class = "navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#link">
-							<span class="sr-only">Toggle navigation</span>
-							<span class = "icon-bar"></span>
-							<span class = "icon-bar"></span>
-							<span class = "icon-bar"></span>
-						</button>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-							<a class="navbar-brand" href="#">MACIEJ</a>
-					</div>
-					<!-- navbar-header -->
+          <a class="navbar-brand" href="#">REACT</a>
+        </div>
+        <!-- navbar-header -->
 
-		 			<div class="collapse navbar-collapse" id="myNavbar">
-		    		<ul class="nav navbar-nav navbar-right">
-						  <li><a href="#">DESCRIPTION</a></li>
-						  <li><a href="#">APPLICATION</a></li>
-						  <li><a href="#">TOOLS</a></li>
-		    		</ul>
-		  		</div>
-					<!-- navbar-collapse -->
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#description">DESCRIPTION</a></li>
+            <li><a href="#application">APPLICATION</a></li>
+            <li><a href="#tools">TOOLS</a></li>
+          </ul>
+        </div>
+        <!-- navbar-collapse -->
 
-				</div>
-			</nav>
-		</header>
+      </div>
+    </nav>
+  </header>
 
-		<!-- DESCRIPTION section -->
-		<div class = "container-fluid bg-1 text-center">
-			<h2 class = "margin">Description of Application</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum risus ipsum, eu facilisis mi vestibulum vel. Nulla pharetra erat eu cursus faucibus. Curabitur at imperdiet felis. Nulla vehicula felis urna, quis convallis nisi vulputate aliquam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris molestie consectetur ex vulputate fermentum. Mauris vestibulum sem nulla, eu malesuada orci ultrices eu. Fusce imperdiet, neque at tristique imperdiet, nisi dui vulputate eros, non commodo sapien turpis vel turpis. Suspendisse et semper diam, sed rutrum velit.</p>
+  <!-- DESCRIPTION section -->
+  <div id="description" class="container-fluid bg-description text-center">
+		<div class="block">
+		  <h1 class="margin">Description of Application</h1>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer condimentum
+		    risus ipsum, eu facilisis mi vestibulum vel. Nulla pharetra erat
+		    eu cursus faucibus. Curabitur at imperdiet felis. Nulla vehicula
+		    felis urna, quis convallis nisi vulputate aliquam. Cum sociis natoque
+		    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+		    Mauris molestie consectetur ex vulputate fermentum. Mauris vestibulum
+		    sem nulla, eu malesuada orci ultrices eu. Fusce imperdiet, neque
+		    at tristique imperdiet, nisi dui vulputate eros, non commodo sapien
+		    turpis vel turpis. Suspendisse et semper diam, sed rutrum velit.</p>
 		</div>
+  </div>
 
-	<!-- APPLICATION section -->
-		<div class = "container-fluid bg-2 text-center">
-			<h2>Try the application</h2>
-			<p> Nunc luctus finibus feugiat. Ut tempus dui eget leo volutpat, at placerat mauris venenatis. Sed at pellentesque turpis, at vehicula massa. Aenean quam neque, dignissim ac mi sit amet, scelerisque lobortis dolor. Phasellus nec orci non risus mattis posuere. Nam ac luctus eros, porta auctor neque. Curabitur tincidunt ullamcorper ipsum sed condimentum. Sed in vulputate mauris. Donec dapibus magna vel ex finibus ornare. Nulla in tellus mi. Proin et dui ac risus semper tristique quis in arcu. Fusce facilisis, ligula a efficitur facilisis, nulla urna eleifend quam, ac dignissim diam libero nec libero. Nulla facilisi. Maecenas aliquam lacus at lectus mattis, eget egestas risus pretium. </p>
+  <!-- APPLICATION section -->
+  <div id="application" class="container-fluid bg-application text-center">
+		<div class="block">
+		  <h2>Try the application</h2>
+		  <p> Nunc luctus finibus feugiat. Ut tempus dui eget leo volutpat, at placerat
+		    mauris venenatis. Sed at pellentesque turpis, at vehicula massa.
+		    Aenean quam neque, dignissim ac mi sit amet, scelerisque lobortis
+		    dolor. Phasellus nec orci non risus mattis posuere. Nam ac luctus
+		    eros, porta auctor neque. Curabitur tincidunt ullamcorper ipsum sed
+		    condimentum. Sed in vulputate mauris. Donec dapibus magna vel ex
+		    finibus ornare. Nulla in tellus mi. Proin et dui ac risus semper
+		    tristique quis in arcu. Fusce facilisis, ligula a efficitur facilisis,
+		    nulla urna eleifend quam, ac dignissim diam libero nec libero. Nulla
+		    facilisi. Maecenas aliquam lacus at lectus mattis, eget egestas risus
+		    pretium. </p>
 		</div>
+  </div>
 
 
-	<!-- TOOLS section -->
-		<div class = "container-fluid bg-3 text-center">
-			<h2>Tools</h2>
-			<p>Cras risus mi, tincidunt vel faucibus at, iaculis ac lacus. Vivamus molestie turpis ligula, sed semper lacus fringilla at. Sed fermentum pretium congue. Ut quis condimentum elit, sit amet viverra sem. Aliquam malesuada hendrerit tellus, vitae maximus quam commodo sed. Suspendisse sit amet tellus lectus. Sed sollicitudin augue ut magna pharetra, in vehicula orci finibus. Suspendisse varius quam eu eros cursus, nec interdum nulla porta. Vestibulum quis velit imperdiet, varius nibh ac, porta quam. Praesent aliquam orci sed tortor dignissim eleifend. </p>
+  <!-- TOOLS section -->
+  <div id="tools" class="container-fluid bg-tools text-center">
+		<div class="block">
+		  <h1>Tools</h1>
+		  <p>Cras risus mi, tincidunt vel faucibus at, iaculis ac lacus. Vivamus
+		    molestie turpis ligula, sed semper lacus fringilla at. Sed fermentum
+		    pretium congue. Ut quis condimentum elit, sit amet viverra sem. Aliquam
+		    malesuada hendrerit tellus, vitae maximus quam commodo sed. Suspendisse
+		    sit amet tellus lectus. Sed sollicitudin augue ut magna pharetra,
+		    in vehicula orci finibus. Suspendisse varius quam eu eros cursus,
+		    nec interdum nulla porta. Vestibulum quis velit imperdiet, varius
+		    nibh ac, porta quam. Praesent aliquam orci sed tortor dignissim eleifend.
+		  </p>
 		</div>
+  </div>
 
+  <footer class="container-fluid bg-4 text-center">
+    <p>Application made by Maciej Adamski <span class="glyphicon glyphicon-envelope"
+          aria-hidden="true"></span> maciej.adamski@pl.ibm.com</p>
+  </footer>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<script src="scroll.js"></script>
+
+	</body>
 </html>
