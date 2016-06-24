@@ -78,8 +78,6 @@ class Test extends React.Component
 
 	getJSON()
 	{
-
-		console.log("TIMES");
 		var url = "https://api.spotify.com/v1/search?q=";
 		url += this.state.search;
 		url += "*&type=artist"
@@ -92,16 +90,13 @@ class Test extends React.Component
 		{
   		if (request.readyState == 4 && request.status == 200)
 			{
-    		console.log('success');
 				var data = JSON.parse(request.responseText);
 				var bandsArray = this.state.bands;
 
 				for(var i = 0; i < data.artists.items.length; i++)
 				{
-					console.log("Name: " + data.artists.items[i].name);
 					bandsArray.push({name: data.artists.items[i].name});
 					this.setState({bands: bandsArray});
-					console.log("TEST: " + this.state.bands[i].name);
 				}
   		}
 			else
@@ -123,6 +118,7 @@ class Test extends React.Component
 							<button className="btn btn-default" type="button" onClick = {this.clearInput}>clear</button>
 						</span>
 
+						<br />
 				</div>
 						<table className="table table-hover">
 							<thead>
