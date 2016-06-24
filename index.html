@@ -81,6 +81,18 @@
       <h2>Try it!</h2>
       <p>Find your band!</p>
       <div id="react"></div>
+      <button id="scroll">scroll</button>
+      <script>
+      $(document).ready(function ()
+      {
+                 $("#scroll").click(function ()
+                 {
+                     $('html, body').animate({
+                         scrollTop: '+=150px'
+                     }, 1000);
+                 });
+             });
+      </script>
     </div>
   </div>
 

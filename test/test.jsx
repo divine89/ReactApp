@@ -78,6 +78,10 @@ class Test extends React.Component
 
 	getJSON()
 	{
+		//window.scrollBy(0, 100);
+
+	
+
 		var url = "https://api.spotify.com/v1/search?q=";
 		url += this.state.search;
 		url += "*&type=artist"
