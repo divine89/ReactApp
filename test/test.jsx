@@ -38,6 +38,8 @@ class Test extends React.Component
 
 		this.getSearchValue = this.getSearchValue.bind(this);
 
+		this.scrollDown = this.scrollDown.bind(this);
+
 	}
 
 	componentWillMount()
@@ -76,12 +78,14 @@ class Test extends React.Component
 		this.setState({data: "Data updated from the child!"});
 	}
 
+	scrollDown()
+	{
+		 $('html, body').animate({scrollTop: '+=250px'}, 900);
+	}
+
 	getJSON()
 	{
-		//window.scrollBy(0, 100);
-
-	
-
+		this.scrollDown();
 		var url = "https://api.spotify.com/v1/search?q=";
 		url += this.state.search;
 		url += "*&type=artist"
