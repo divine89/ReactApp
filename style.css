@@ -1,15 +1,114 @@
 body
 {
 	background-color: #262626;
-	color: #f2f2f2;
 }
 
-#hello
+.navbar
+{
+  margin-bottom: 0;
+  background-color: #60d8f9;
+  border: 0;
+  font-size: 16px !important;
+  letter-spacing: 4px;
+  opacity: 0.9;
+	padding: 0px 0;
+}
+
+.nav > li > a
+{
+	color: #000000;
+}
+
+.nav > li > a:hover
+{
+	color: #f2f2f2;
+	background-color: #cc7a6f;
+}
+
+.navbar-brand
+{
+	color: #000000;
+}
+
+.block
+{
+	margin-top: 0px;
+	padding: 100px 100px;
+	line-height: 1.9;
+	font-size: 30px;
+}
+
+.bg-description
 {
 	background-color: #262626;
+ 	color: #f2f2f2;
+}
+
+.bg-application
+{
+	background-color: #f2f2f2;
+ 	color: #262626;
+}
+
+.bg-technology
+{
+	background-color: #262626;
+ 	color: #f2f2f2;
+}
+
+footer
+{
+	font-size: 16px;
+	background-color: #f2f2f2;
+	color: #262626;
+	padding: 20px 0;
 }
 
 h1
 {
-	text-align: left;
+	color: #60d8f9;
+	font-family: 'Roboto', sans-serif;
+  margin: 10px 0 30px 0;
+  letter-spacing: 10px;
+  font-size: 70px;
+}
+
+h2
+{
+	color: #cc7a6f;
+	font-family: 'Roboto', sans-serif;
+  margin: 10px 0 30px 0;
+  letter-spacing: 10px;
+  font-size: 70px;
+}
+
+h3
+{
+	font-size: 40px;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #cc7a6f;
+}
+
+h4
+{
+	font-size: 30px;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #f2f2f2;
+}
+
+
+p
+{
+	font-weight: 300;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.margin
+{
+	margin-bottom: 45px;
+}
+
+.jumbotron
+{
+	background-color: #cc7a6f;
 }

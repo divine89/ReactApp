@@ -116,10 +116,13 @@ class Test extends React.Component
 	{
 		return(
 			<div>
-				<div id = "json">
-					<input type = "text" onChange = {this.getSearchValue}></input>
-					<button onClick = {this.getJSON}>Get JSON</button>
-					<button onClick = {this.clearInput}>CLEAR</button>
+				<div className="test"><input className="form-control" type="text" onChange = {this.getSearchValue}></input>
+					<span className="input-group-btn">
+						<button className="btn btn-default" type="button" onClick = {this.getJSON}>search</button>
+						<button className="btn btn-default" type="button" onClick = {this.clearInput}>clear</button>
+					</span>
+
+				</div>
 					<h3>Results<br /></h3>
 						<div>
 							<ul ref = "myref">
@@ -127,9 +130,8 @@ class Test extends React.Component
 							</ul>
 						</div>
 				</div>
-			</div>
 		);
 	}
 }
 
-ReactDOM.render(<Test />, document.getElementById("app"));
+ReactDOM.render(<Test />, document.getElementById("react"));
