@@ -116,19 +116,27 @@ class Test extends React.Component
 	{
 		return(
 			<div>
-				<div className="test"><input className="form-control" type="text" onChange = {this.getSearchValue}></input>
-					<span className="input-group-btn">
-						<button className="btn btn-default" type="button" onClick = {this.getJSON}>search</button>
-						<button className="btn btn-default" type="button" onClick = {this.clearInput}>clear</button>
-					</span>
+				<div className="test">
+					<input className="form-control" type="text" onChange = {this.getSearchValue}></input>
+						<span className="input-group-btn">
+							<button className="btn btn-default" type="button" onClick = {this.getJSON}>search</button>
+							<button className="btn btn-default" type="button" onClick = {this.clearInput}>clear</button>
+						</span>
 
 				</div>
-					<h3>Results<br /></h3>
-						<div>
-							<ul ref = "myref">
-							{this.state.items.map((dynamicComponent, i) => <List key = {i} item={dynamicComponent} />)}
-							</ul>
-						</div>
+						<table className="table table-hover">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Popularity</th>
+									<th>Email</th>
+								</tr>
+							</thead>
+							<tbody>
+									{this.state.items.map((dynamicComponent, i) => <List key = {i} item={dynamicComponent} />)}
+							</tbody>
+						</table>
+
 				</div>
 		);
 	}

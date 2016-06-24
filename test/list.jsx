@@ -5,7 +5,10 @@ export default class List extends React.Component
 	render()
 	{
 		return(
-					<li>{this.props.item.name}</li>
+					<tr>
+						<td>{this.props.item.name}</td>
+						<td>50</td>
+					</tr>
 			);
 	}
 }
