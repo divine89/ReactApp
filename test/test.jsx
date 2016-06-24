@@ -14,12 +14,7 @@ class Test extends React.Component
 		this.state =
 		{
 			items: [],
-			nazwy: [{name: "Maciek"}, {name: "Ilona"}, {name: "Aurelka"},{name: "Dupa"}, {name: "pizda"}],
-			dane: [{component: "First"}, {component: "Second"}, {component: "Third"}, {component: "Kurwa"}],
 			data: [],
-			text: "Some text",
-			header: "Header form state",
-			content: "Content from state",
 			json: "",
 			bands: [],
 			search: ""
@@ -100,12 +95,17 @@ class Test extends React.Component
 			{
 				var data = JSON.parse(request.responseText);
 				var bandsArray = this.state.bands;
+				console.log("GET ID: " + data.artists.items[0].id);
+				console.log("GET IMG: " + data.artists.items[0].images[0].url);
 
 				for(var i = 0; i < data.artists.items.length; i++)
 				{
-					bandsArray.push({name: data.artists.items[i].name});
-					this.setState({bands: bandsArray});
+					bandsArray.push({name: data.artists.items[i].name, id: data.artists.items[i].id, img: data.artists.items[i].images[0].url});
+				//	bandsArray.push({id: data.artists.items[i].id});
+				//	bandsArray.push({img: data.artists.items[i].images[0].url});
+
 				}
+				this.setState({bands: bandsArray});
   		}
 			else
 			{
@@ -137,7 +137,7 @@ class Test extends React.Component
 								</tr>
 							</thead>
 							<tbody>
-									{this.state.items.map((dynamicComponent, i) => <List key = {i} item={dynamicComponent} />)}
+									{this.state.items.map((object) => <List key={object.id} id={object.id} name={object.name} img={object.img} />)}
 							</tbody>
 						</table>
 
