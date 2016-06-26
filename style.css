@@ -64,10 +64,14 @@ footer
 	padding: 20px 0;
 }
 
+h1,h2
+{
+  font-family: 'Roboto', sans-serif;
+}
+
 h1
 {
 	color: #60d8f9;
-	font-family: 'Roboto', sans-serif;
   margin: 10px 0 30px 0;
   letter-spacing: 10px;
   font-size: 70px;
@@ -76,7 +80,6 @@ h1
 h2
 {
 	color: #cc7a6f;
-	font-family: 'Roboto', sans-serif;
   margin: 10px 0 30px 0;
   letter-spacing: 10px;
   font-size: 70px;
