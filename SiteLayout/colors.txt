@@ -1,3 +1,0 @@
-#cc7a6f - react red
-
-#60d8f9 - react blue
